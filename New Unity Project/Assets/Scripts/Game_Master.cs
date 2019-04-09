@@ -49,6 +49,7 @@ public class Game_Master : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		Cursor.visible = false;
 		reikyaku_Mode = false;
 		Score = 0;
 		PlayerLife_Gage=450;

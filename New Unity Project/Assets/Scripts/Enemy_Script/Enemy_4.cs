@@ -14,7 +14,7 @@ public class Enemy_4 : MonoBehaviour {
 	public GameObject Damege_Effect;
 
 	public bool rikabary=true;
-	public GameObject Stage;
+	GameObject Stage;
 	public float Live_Time;
 	public float attack_Time;
 	public float kakuritu;
@@ -30,6 +30,7 @@ public class Enemy_4 : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		kakuritu = Random.Range(0f,6f);
+		Stage = GameObject.FindGameObjectWithTag("Stage");
 	}
 
 	// Update is called once per frame

@@ -7,7 +7,7 @@ public class Enemy_6 : MonoBehaviour {
 	public GameObject Bullet_Enter;
 	public GameObject Enemy_Object;
 	public GameObject Enemy_Bullet;
-	public GameObject Stage;
+	GameObject Stage;
 	[SerializeField] Vector3 Rot;
 
 	public GameObject Hit_Se_1;
@@ -30,7 +30,7 @@ public class Enemy_6 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+		Stage = GameObject.FindGameObjectWithTag("Stage");
 	}
 
 	// Update is called once per frame

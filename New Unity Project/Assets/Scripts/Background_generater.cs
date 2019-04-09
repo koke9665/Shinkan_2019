@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Background_generater : MonoBehaviour {
 
-	public GameObject Stage;
+ 	GameObject Stage;
 	public GameObject BackGround_Obj1;
 	public GameObject BackGround_Obj2;
 	public GameObject BackGround_Obj3;
@@ -21,6 +21,7 @@ public class Background_generater : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		GameObject target = GameObject.FindGameObjectWithTag("Player");
 	}
 
 	// Update is called once per frame

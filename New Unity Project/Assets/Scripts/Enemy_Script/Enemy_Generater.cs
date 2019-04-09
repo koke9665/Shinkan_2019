@@ -28,6 +28,8 @@ public class Enemy_Generater : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+
+
 		upper_Time += Time.deltaTime;
 		Game_Time += Time.deltaTime;
 

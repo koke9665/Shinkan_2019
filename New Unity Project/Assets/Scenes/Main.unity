@@ -487,6 +487,14 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: 114900777509523852, guid: d1ccc01285ea64160a57eaf3af66eae9, type: 2}
     value: {fileID: 556393394}
+  - key: {fileID: 114622858491901274, guid: d1ccc01285ea64160a57eaf3af66eae9, type: 2}
+    value: {fileID: 94815516}
+  - key: {fileID: 114314772081865372, guid: d1ccc01285ea64160a57eaf3af66eae9, type: 2}
+    value: {fileID: 657694228}
+  - key: {fileID: 114221970196171538, guid: d1ccc01285ea64160a57eaf3af66eae9, type: 2}
+    value: {fileID: 296014649}
+  - key: {fileID: 114458531130021306, guid: d1ccc01285ea64160a57eaf3af66eae9, type: 2}
+    value: {fileID: 1211554308}
   m_ExposedReferences:
     m_References:
     - 91f62ad6b83e2469fbd6fdde4a90317c: {fileID: 0}
@@ -1542,7 +1550,7 @@ GameObject:
   - component: {fileID: 254208719}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2013,7 +2021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Stage: {fileID: 254208718}
-  Enemy_1: {fileID: 1056024180528518, guid: a4373219704264b3ab81f4d4205fd752, type: 2}
+  Enemy_1: {fileID: 1131131407826138, guid: 152c8b3b0d4cf495bb7112cf93a3e26a, type: 2}
   Enemy_2: {fileID: 1990480519433070, guid: 04e29af89fbc847a982710a08a95510a, type: 2}
   Enemy_3: {fileID: 1116583820360388, guid: ae510792604064be28b12eebd9ad45c1, type: 2}
   Enemy_4: {fileID: 1116583820360388, guid: a46c37a7c02624455bfd11a362fa3638, type: 2}
@@ -3260,7 +3268,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 663090755}
-  m_LocalRotation: {x: 0.0011641937, y: -0.6528005, z: 0.0010032448, w: 0.7575283}
+  m_LocalRotation: {x: 0.0011612272, y: -0.65280044, z: 0.0010006882, w: 0.75752836}
   m_LocalPosition: {x: 61.171932, y: 1.22, z: -5.4213333}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5396,7 +5404,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a03bf34e07d94b658dce386a9b00474, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Stage: {fileID: 0}
   BackGround_Obj1: {fileID: 0}
   BackGround_Obj2: {fileID: 0}
   BackGround_Obj3: {fileID: 0}
@@ -5417,7 +5424,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a03bf34e07d94b658dce386a9b00474, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Stage: {fileID: 254208718}
   BackGround_Obj1: {fileID: 1767406741500980, guid: 29d5d18c336e24ecfbfc26935a896e6f,
     type: 2}
   BackGround_Obj2: {fileID: 1691310528388278, guid: 332ef063f8f114b98b6ef2d8b0144020,
@@ -8463,7 +8469,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1558009070}
-  m_LocalRotation: {x: 0.0011641937, y: -0.6528005, z: 0.0010032448, w: 0.7575283}
+  m_LocalRotation: {x: 0.0011612272, y: -0.65280044, z: 0.0010006882, w: 0.75752836}
   m_LocalPosition: {x: 61.211933, y: 0.19000006, z: -1.6413336}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -8843,7 +8849,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1610597165}
-  m_LocalRotation: {x: 0.0011641937, y: -0.6528005, z: 0.0010032448, w: 0.7575283}
+  m_LocalRotation: {x: 0.0011612272, y: -0.65280044, z: 0.0010006882, w: 0.75752836}
   m_LocalPosition: {x: 20.251354, y: 1.7635939, z: -6.132617}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

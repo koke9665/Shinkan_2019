@@ -15,7 +15,7 @@ public class Enemy_Bullet : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-Enemy_Bullet1.transform.Translate(-0.5f,0,0);
+Enemy_Bullet1.transform.Translate(-0.6f,0,0);
 	}
 
 	void OnTriggerEnter(Collider other)

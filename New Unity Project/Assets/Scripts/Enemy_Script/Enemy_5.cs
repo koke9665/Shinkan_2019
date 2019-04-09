@@ -7,7 +7,7 @@ public class Enemy_5 : MonoBehaviour {
 	public GameObject Bullet_Enter;
 	public GameObject Enemy_Object;
 	public GameObject Enemy_Bullet;
-	public GameObject Stage;
+	GameObject Stage;
 
 	public GameObject Hit_Se_1;
 	public GameObject Damege_Effect;
@@ -29,7 +29,7 @@ public class Enemy_5 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+Stage = GameObject.FindGameObjectWithTag("Stage");
 	}
 
 	// Update is called once per frame

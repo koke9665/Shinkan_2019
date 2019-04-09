@@ -260,6 +260,8 @@
      <Compile Include="Assets\Scripts\Enemy_Script\Enemy_4.cs" />
      <Compile Include="Assets\Scripts\Enemy_Script\Enemy_5.cs" />
      <Compile Include="Assets\Scripts\Enemy_Script\Enemy_6.cs" />
+     <Compile Include="Assets\Scripts\Enemy_Script\Enemy_7.cs" />
+     <Compile Include="Assets\Scripts\Enemy_Script\Enemy_8.cs" />
      <Compile Include="Assets\Scripts\Enemy_Script\Enemy_Bullet.cs" />
      <Compile Include="Assets\Scripts\Enemy_Script\Enemy_Bullet_2.cs" />
      <Compile Include="Assets\Scripts\Enemy_Script\Enemy_Bullet_3.cs" />

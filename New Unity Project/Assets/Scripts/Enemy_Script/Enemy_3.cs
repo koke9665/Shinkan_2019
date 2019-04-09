@@ -8,7 +8,7 @@ public class Enemy_3 : MonoBehaviour {
 	public GameObject Enemy_Object;
 	public GameObject Enemy_Bullet;
 	public GameObject Enemy_Bullet2;
-	public GameObject Stage;
+	GameObject Stage;
 
 	public GameObject Hit_Se_1;
 	public GameObject Damege_Effect;
@@ -25,6 +25,7 @@ public class Enemy_3 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		Stage = GameObject.FindGameObjectWithTag("Stage");
 			attack_Time = Random.Range(0f,11f);
 	}
 

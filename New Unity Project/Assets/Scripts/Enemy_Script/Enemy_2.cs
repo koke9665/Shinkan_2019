@@ -8,7 +8,7 @@ public class Enemy_2 : MonoBehaviour {
 	public GameObject Enemy_Object;
 	public GameObject Enemy_Bullet;
 	public GameObject Enemy_Bullet2;
-	public GameObject Stage;
+	GameObject Stage;
 	public GameObject Rikabary;
 
 	public GameObject Hit_Se_1;
@@ -19,6 +19,8 @@ public class Enemy_2 : MonoBehaviour {
 	public float kakuritu;
 	public GameObject Player;
 	public int jager = 100;
+
+
 	GameObject Bullet;
 	GameObject Bullet2;
 	GameObject Hit_Se_Obj;
@@ -29,6 +31,7 @@ public class Enemy_2 : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		kakuritu = Random.Range(0,35);
+		Stage = GameObject.FindGameObjectWithTag("Stage");
 	}
 
 	// Update is called once per frame
