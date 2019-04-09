@@ -40,6 +40,7 @@ public class Enemy_2 : MonoBehaviour {
 			Instantiate(Explotion_Se_Obj, this.transform.position, Quaternion.identity);
 			Instantiate(Damege_Effect, this.transform.position, Quaternion.identity);
 			Game_Master.Score = Game_Master.Score + 10;
+			Game_Master.Awakening_Gage += 1000;
 
 			if(kakuritu < 2){
 				Destroy (Enemy_Object);

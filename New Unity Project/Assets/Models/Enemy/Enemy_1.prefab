@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 54920534165454472}
   - component: {fileID: 114901497213626772}
   - component: {fileID: 95012419493050106}
+  - component: {fileID: 114797261050859910}
   m_Layer: 0
   m_Name: Enemy_1
   m_TagString: Enemy
@@ -132,6 +133,36 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114797261050859910
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1088407350196596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f131dd35d296fca4e90efc4ed717e48b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GraphicPrefab: {fileID: 197840, guid: 2b4fb31f6472842468de0a7249d7b8da, type: 2}
+  Target: {fileID: 4869560672109678, guid: 15c0a9c32bc864c908c73b81ee19d998, type: 2}
+  OffSet: {x: 0, y: 0, z: 0}
+  Icon: {fileID: 21300086, guid: b2ff3b281537fbc4d91af3e848afde5c, type: 3}
+  DeathIcon: {fileID: 21300018, guid: b2ff3b281537fbc4d91af3e848afde5c, type: 3}
+  IconColor: {r: 0.99215686, g: 0.27140468, b: 0.06666668, a: 1}
+  Size: 6.6
+  ShowCircleArea: 0
+  CircleAreaRadius: 10
+  CircleAreaColor: {r: 1, g: 1, b: 1, a: 0.9}
+  isInteractable: 1
+  InfoItem: This is a Bot too!
+  OffScreen: 1
+  DestroyWithObject: 1
+  BorderOffScreen: 0
+  OffScreenSize: 1
+  isHoofdPunt: 0
+  RenderDelay: 0.81
+  m_Effect: 1
 --- !u!114 &114901497213626772
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -145,3 +176,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bullet_Enter: {fileID: 0}
   Enemy_Object: {fileID: 1088407350196596}
+  Enemy_Bullet: {fileID: 0}
+  Stage: {fileID: 0}
+  Hit_Se_1: {fileID: 0}
+  Damege_Effect: {fileID: 0}
+  Live_Time: 0
+  Player: {fileID: 0}
+  jager: 100
+  Explotion_Se_Obj: {fileID: 0}

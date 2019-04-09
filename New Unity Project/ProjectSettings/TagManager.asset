@@ -13,6 +13,7 @@ TagManager:
   - Bullet_Reiwa
   - Rikabary
   - Bullet_Sp2
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX
@@ -24,8 +25,8 @@ TagManager:
   - 
   - PostProcessing
   - 
-  - 
-  - 
+  - MiniMap
+  - MiniMap_Master
   - 
   - 
   - 

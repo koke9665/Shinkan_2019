@@ -5,6 +5,9 @@ using UnityEngine;
 public class Enemy_Bullet_2 : MonoBehaviour {
 
 	public GameObject Enemy_Bullet1;
+	public GameObject Bullet_Destroy_Effect;
+	public GameObject Bullet_Destroy_Se;
+
 	public float kakudo;
 	// Use this for initialization
 	void Start () {
@@ -24,10 +27,15 @@ Destroy(Enemy_Bullet1);
 }
 
 if(other.CompareTag("Bullet_Sp")){
+	Instantiate(Bullet_Destroy_Effect, this.transform.position, Quaternion.identity);
+	Instantiate(Bullet_Destroy_Se, this.transform.position, Quaternion.identity);
 	Destroy(this.gameObject);
 	Game_Master.Score = Game_Master.Score + 5;
 }
 if(other.CompareTag("Bullet_Reiwa")){
+	Instantiate(Bullet_Destroy_Effect, this.transform.position, Quaternion.identity);
+	Instantiate(Bullet_Destroy_Se, this.transform.position, Quaternion.identity);
+
 	Destroy(this.gameObject);
 	Game_Master.Score = Game_Master.Score + 10;
 }

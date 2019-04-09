@@ -167,18 +167,18 @@ public class Player_Move : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
       {
-
+        if(Player_Move_On){
       if(other.CompareTag("Enemy_Bullet")){
      Game_Master.PlayerLife_Gage -=  150;
      Game_Master.Player_hit = true;
-     Debug.Log("プレイヤー破壊！");
       }
 
        if(other.CompareTag("Enemy")){
            Game_Master.PlayerLife_Gage -=  100;
               Game_Master.Player_hit = true;
-           Debug.Log("プレイヤー破壊！");
             }
+
+          }
 
             if(other.CompareTag("Rikabary")){
               Rikabary_Get = true;

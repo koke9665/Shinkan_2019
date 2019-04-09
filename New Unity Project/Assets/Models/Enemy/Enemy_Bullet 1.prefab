@@ -113,6 +113,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy_Bullet1: {fileID: 1345760110005122}
+  Bullet_Destroy_Effect: {fileID: 100014, guid: 5332791ebce075d4a9e56f4581e7fb47,
+    type: 2}
+  Bullet_Destroy_Se: {fileID: 1157045837667470, guid: 8d1d413bdfe2c45379ac547f0c8a6f52,
+    type: 2}
+  kakudo: 0
 --- !u!135 &135176204758532922
 SphereCollider:
   m_ObjectHideFlags: 1

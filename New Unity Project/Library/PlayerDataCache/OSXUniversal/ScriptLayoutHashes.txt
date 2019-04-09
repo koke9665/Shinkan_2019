@@ -1,6 +1,6 @@
 OSXStandalone
 PlayerPath?
-/Users/fukuiyuuki/Desktop/shinkan(master)_Test2.app
+/Users/fukuiyuuki/Desktop/shinkan(master)_Test3.app
 SceneListBegin?
 Assets/Scenes/Title.unity
 Assets/Scenes/Main.unity
@@ -34,8 +34,8 @@ d58bf8686b1df9ffe227268500d62766 Assembly-CSharp.dll:naichilab.RankingBoards
 a1745a63aaebc245b5d095f3d84b9534 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.Bloom
 f6637497451c9a030c421de4a1ad5cdb Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
 0ad430181e1f8260e48628401f48adfe Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.MotionBlur
-3a76162ed25e095a7ce5381c40daee57 Assembly-CSharp.dll:.Bullet_Generater
-9e2bdaf64086f7be4db3d44e3d84d738 Assembly-CSharp.dll:.Enemy_Bullet_2
+fbb3fab2ae80ebf20dcb6d45b70eaa6d Assembly-CSharp.dll:.Bullet_Generater
+37737ee66184614cb7b2f8bd50ff90a6 Assembly-CSharp.dll:.Enemy_Bullet_2
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.Fade
 b14b4630cc47b6e9ea8a644551a6a8cc Unity.TextMeshPro.dll:TMPro.TMP_Text
 366be957fdca5f259bb45b8a9253e64b Assembly-CSharp.dll:.Bullet_X1
@@ -72,6 +72,7 @@ e90403eeda069970e0b9de1533de13a6 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 2d58ca16854b99daea8c45e9c0f367b7 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 16da51d1b62ef6d4ee1849350434023b UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 88d7d4231f4e98130c285a8556f9964e Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.DepthOfField
+48fb16ad7c5abad33d94ad7524a2df3c Assembly-CSharp.dll:.Bullet_Sp3
 50b0b141074b216c8b53b1bd467f73c9 Unity.TextMeshPro.dll:TMPro.TMP_InputField
 53cefe5d98cadefbab750835e70b89c0 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 486cd95c82d8305219c352c06b776e1f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -113,7 +114,7 @@ fc61432802d627e9bad32dbeb93f774e Unity.Postprocessing.Runtime.dll:UnityEngine.Re
 be83f4a7f369b21bd681d7bbb2221c0e Assembly-CSharp.dll:Prism.Demo.PrismLightFlicker
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:NCMB.NCMBManager
 22047f3c3fbb715550f61eddb26e9cd3 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.Vignette
-fdf4cff22449e1cf26ebf7dd86c79099 Assembly-CSharp.dll:.Enemy_Bullet
+6dcc3974f805cbd81a2d9da04c0fb828 Assembly-CSharp.dll:.Enemy_Bullet
 092c59be351226b67df80a068aa19273 Assembly-CSharp.dll:.WFX_Demo_New
 406b17ed413fa0912e3ece055460a418 Assembly-CSharp.dll:.PrismEffects
 486cd95c82d8305219c352c06b776e1f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
@@ -239,6 +240,7 @@ e033f131358cea5a0eabf9561e781deb UnityEngine.TestRunner.dll:UnityEngine.TestTool
 c14adc33cfcbf1587a2d7c50b0f48e96 Assembly-CSharp.dll:.GameOver_result
 a5df3ae7071abaae1603fae321e34d56 Assembly-CSharp.dll:Cinemachine.CinemachineCollider
 15320b6936160df5b889e031a8802ff7 Assembly-CSharp.dll:Cinemachine.CinemachineBlenderSettings
+59c0daee17229f9b9ff693c35fe0cb3c Assembly-CSharp.dll:.Bullet_Reiwa_Sp
 85abb8d34aa02aa4b24219930276520f Assembly-CSharp.dll:.WFX_LightFlicker
 40d5394fd79faba4ecc20f8b3d3bfbd7 Assembly-CSharp.dll:.Enemy_3
 d75dc834c5dec688db75a55a1724c90f UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
@@ -249,8 +251,8 @@ dfd33ff9ae3ce8d7ca1f22b475ec2387 UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 aac9c55ae7ba4b95b852a7d9c191acd1 Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 b021b4c35fbca70f6fef1ee030140dbe Assembly-CSharp.dll:UnityEngine.PostProcessing.PostProcessingProfile
 0a006f3734181ba8b26758f0866152c0 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
-b383d30de641ad021a09af0a83cb9174 Assembly-CSharp.dll:.Game_Master
-486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.Ranking_Gameover
+2b6e8a42202859bb71e64fdb3faba3a7 Assembly-CSharp.dll:.Game_Master
+5ac0a1611ff594da73a18779579db71e Assembly-CSharp.dll:.Ranking_Gameover
 3440e114848660940aab66a2e380929b Assembly-CSharp.dll:Cinemachine.CinemachineSmoothPath
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:Cinemachine.CinemachineHardLookAt
 f9321b860fc22820c43b0402a39076f9 Assembly-CSharp.dll:.WFX_Demo_Wall
@@ -266,13 +268,14 @@ c1791db8df7a6d30dc3a3e487bced78b Unity.Postprocessing.Runtime.dll:UnityEngine.Re
 9318334b30e9f195f573b2ce00154b95 Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 b23732f6d9d008c9d4738c03ea16f3c6 Assembly-CSharp.dll:.PrismVolume
 09824dc52186816875b84af8b46b6c1c Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.AmbientOcclusion
+59c0daee17229f9b9ff693c35fe0cb3c Assembly-CSharp.dll:.Bullet_Reiwa_Sp2
 ec5470f8422a5983bc546b58ba171cca Assembly-CSharp.dll:.CFX_SpawnSystem
 cd79e95737a9059076729f44072ee3e3 Assembly-CSharp.dll:naichilab.RankingInfo
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.Ranking_Test
 93307bd34e39d73fd24e00ec39c25a91 Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 a6010f32fa76aa68f2da77573a1e333a Assembly-CSharp.dll:naichilab.RankingNode
 88c0c0d93b54d37a84150a42239b56ed Assembly-CSharp.dll:Cinemachine.CinemachineBrain
-9e2bdaf64086f7be4db3d44e3d84d738 Assembly-CSharp.dll:.Enemy_Bullet_3
+37737ee66184614cb7b2f8bd50ff90a6 Assembly-CSharp.dll:.Enemy_Bullet_3
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:Cinemachine.CinemachineHardLockToTarget
 646c2b83bd38465f35ab127b9ca8a1b2 Assembly-CSharp.dll:Cinemachine.CinemachineBasicMultiChannelPerlin
 1a5d14e81bea6c2c032e7f93ed1be089 Assembly-CSharp.dll:Cinemachine.CinemachineClearShot

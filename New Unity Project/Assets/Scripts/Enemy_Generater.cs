@@ -9,6 +9,7 @@ public class Enemy_Generater : MonoBehaviour {
 	public GameObject Enemy_2;
 	public GameObject Enemy_3;
 	public GameObject Enemy_4;
+	public GameObject Enemy_5;
 	public float Game_Time;
 	public float upper_Time;
 	public float upper_Timing;
@@ -18,6 +19,7 @@ public class Enemy_Generater : MonoBehaviour {
 	GameObject Obj2;
 	GameObject Obj3;
 	GameObject Obj4;
+	GameObject Obj5;
 
 	// Use this for initialization
 	void Start () {
@@ -47,6 +49,7 @@ public class Enemy_Generater : MonoBehaviour {
 				}
 				if(upper_Timing < 3 ){
 					Stage_Chip_3();
+					Stage_Chip_5();
 				}
 
 				if(upper_Timing < 1 ){
@@ -68,6 +71,7 @@ public class Enemy_Generater : MonoBehaviour {
 
 				if(upper_Timing < 4){
 						Stage_Chip_3();
+							Stage_Chip_5();
 					}
 
 					if(upper_Timing < 2){
@@ -84,6 +88,7 @@ public class Enemy_Generater : MonoBehaviour {
 					upper_Timing = Random.Range(0f,10f);
 					if(upper_Timing < 5){
 						Stage_Chip_2();
+							Stage_Chip_5();
 					}
 					 if(upper_Timing < 3.5){
 						Stage_Chip_3();
@@ -103,6 +108,7 @@ public class Enemy_Generater : MonoBehaviour {
 					upper_Timing = Random.Range(0f,10f);
 					if(upper_Timing < 7){
 						Stage_Chip_2();
+						Stage_Chip_5();
 					}
 					 if(upper_Timing < 5){
 						Stage_Chip_3();
@@ -121,6 +127,7 @@ public class Enemy_Generater : MonoBehaviour {
 					upper_Timing = Random.Range(0f,10f);
 					if(upper_Timing < 6){
 						Stage_Chip_2();
+						Stage_Chip_5();
 					}
 					 if(upper_Timing < 5){
 						Stage_Chip_3();
@@ -134,26 +141,32 @@ public class Enemy_Generater : MonoBehaviour {
 	}
 
 	void Stage_Chip_1(){
-		upper_point_y = Random.Range(-30f,30f);
+		upper_point_y = Random.Range(-39f,39f);
 		upper_point_x = Random.Range(-15f,25f);
 		Obj = (GameObject)Instantiate (Enemy_1, new Vector3(this.transform.position.x + upper_point_x,upper_point_y,this.transform.position.z), Quaternion.identity);
 		Obj.transform.parent = Stage.transform;
 	}
 	void Stage_Chip_2(){
-		upper_point_y = Random.Range(-30f,30f);
+		upper_point_y = Random.Range(-39f,39f);
 		upper_point_x = Random.Range(-15f,25f);
 		Obj2 = (GameObject)Instantiate (Enemy_2, new Vector3(this.transform.position.x + upper_point_x,upper_point_y,this.transform.position.z), Quaternion.identity);
 		Obj2.transform.parent = Stage.transform;
 	}
 	void Stage_Chip_3(){
-		upper_point_y = Random.Range(-30f,30f);
+		upper_point_y = Random.Range(-39f,39f);
 		upper_point_x = Random.Range(-15f,25f);
 		Obj3 = (GameObject)Instantiate (Enemy_3, new Vector3(this.transform.position.x + upper_point_x,upper_point_y,this.transform.position.z), Quaternion.identity);
 		Obj3.transform.parent = Stage.transform;
 	}
 	void Stage_Chip_4(){
-		upper_point_y = Random.Range(-5f,5f);
+		upper_point_y = Random.Range(-5f,30f);
 		Obj4 = (GameObject)Instantiate (Enemy_4, new Vector3(this.transform.position.x,upper_point_y-25,this.transform.position.z), Quaternion.identity);
+		Obj4.transform.parent = Stage.transform;
+	}
+	void Stage_Chip_5(){
+		upper_point_y = Random.Range(-39f,39f);
+		upper_point_x = Random.Range(-15f,25f);
+		Obj4 = (GameObject)Instantiate (Enemy_5, new Vector3(this.transform.position.x + upper_point_x,upper_point_y,this.transform.position.z), Quaternion.identity);
 		Obj4.transform.parent = Stage.transform;
 	}
 

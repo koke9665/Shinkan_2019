@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1345760110005122}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 139.3038, y: -8.202264, z: 9.348709}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
@@ -113,6 +113,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy_Bullet1: {fileID: 1345760110005122}
+  Bullet_Destroy_Effect: {fileID: 100014, guid: 5332791ebce075d4a9e56f4581e7fb47,
+    type: 2}
+  Bullet_Destroy_Se: {fileID: 1157045837667470, guid: 8d1d413bdfe2c45379ac547f0c8a6f52,
+    type: 2}
 --- !u!135 &135176204758532922
 SphereCollider:
   m_ObjectHideFlags: 1
