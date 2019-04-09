@@ -45,12 +45,25 @@ public class Bullet_Generater : MonoBehaviour {
     if(Player_Move.Player_Move_On == true && Game_Master.Awakening_Flag == false){
 
 
+      weapon_Anim.SetBool("Awaking_Use_Z",false);
+      weapon_Anim.SetBool("Awaking_Use_X",false);
+
        if(weapon_switch&&Input.GetKeyDown(KeyCode.LeftShift)){
+
+         //ショット中のSEの初期化
+         Shot_Se.active = false;
+         Laser_Se.active = false;
+
          weapon_Anim.SetBool("Use_Sp_Z",false);
          weapon_Anim.SetBool("Use_Sp_X",false);
           weapon_switch = false;
           weapon_Anim.SetBool("Weapon_Change",false);
       }else if(Input.GetKeyDown(KeyCode.LeftShift)){
+
+        //ショット中のSEの初期化
+        Shot_Se.active = false;
+        Laser_Se.active = false;
+
         weapon_switch = true;
         weapon_Anim.SetBool("Use_Normal_Z",false);
         weapon_Anim.SetBool("Use_Normal_X",false);
@@ -151,13 +164,14 @@ public class Bullet_Generater : MonoBehaviour {
 
 
         //覚醒中ショット処理
-      }else if(Game_Master.Awakening_Flag){
+      }else if(Game_Master.Awakening_Flag && Player_Move.Player_Move_On==true){
 
         Game_Master.Awakening_Gage -= 5;
 
         if(Game_Master.Awakening_Gage<=0){
           Game_Master.Awakening_Flag=false;
         }
+
         weapon_switch = true;
         weapon_Anim.SetBool("Use_Normal_Z",false);
         weapon_Anim.SetBool("Use_Normal_X",false);
@@ -166,8 +180,8 @@ public class Bullet_Generater : MonoBehaviour {
         if(Input.GetKey(KeyCode.X)&&Game_Master.PlayerLife_Gage>0){
 
 
-          weapon_Anim.SetBool("Use_Sp_Z",false);
-          weapon_Anim.SetBool("Use_Sp_X",true);
+          weapon_Anim.SetBool("Awaking_Use_Z",false);
+          weapon_Anim.SetBool("Awaking_Use_X",true);
           Camera.SetBool("Sp_Use",true);
           Shot_Se.active = true;
           Laser_Se.active = false;
@@ -192,39 +206,64 @@ public class Bullet_Generater : MonoBehaviour {
 
         }else if(Input.GetKey(KeyCode.Z)&&Game_Master.PlayerLife_Gage>0){
 
-          weapon_Anim.SetBool("Use_Sp_Z",true);
-          weapon_Anim.SetBool("Use_Sp_X",false);
+          weapon_Anim.SetBool("Awaking_Use_Z",true);
+          weapon_Anim.SetBool("Awaking_Use_X",false);
           Camera.SetBool("Sp_Use",true);
           Laser_Se.active = true;
 
           Sp_Use = true;
-          Instantiate(Bullet_SP3, new Vector3(this.transform.position.x+3.5f,this.transform.position.y + 1.5f ,this.transform.position.z), Quaternion.identity);
+          Instantiate(Bullet_SP3, new Vector3(this.transform.position.x+5f,this.transform.position.y + 1.5f ,this.transform.position.z), Quaternion.identity);
           Instantiate(Bullet_SP4, new Vector3(this.transform.position.x+3.5f,this.transform.position.y ,this.transform.position.z), Quaternion.identity);
-          Instantiate(Bullet_SP3, new Vector3(this.transform.position.x+3.5f,this.transform.position.y - 1.5f ,this.transform.position.z), Quaternion.identity);
-          Instantiate(Bullet_SP3, new Vector3(this.transform.position.x+4.5f,this.transform.position.y + 1.5f ,this.transform.position.z), Quaternion.identity);
+          Instantiate(Bullet_SP3, new Vector3(this.transform.position.x+5f,this.transform.position.y - 1.5f ,this.transform.position.z), Quaternion.identity);
+          Instantiate(Bullet_SP3, new Vector3(this.transform.position.x+6f,this.transform.position.y + 1.5f ,this.transform.position.z), Quaternion.identity);
           Instantiate(Bullet_SP4, new Vector3(this.transform.position.x+4.5f,this.transform.position.y ,this.transform.position.z), Quaternion.identity);
-          Instantiate(Bullet_SP3, new Vector3(this.transform.position.x+4.5f,this.transform.position.y - 1.5f ,this.transform.position.z), Quaternion.identity);
-          Instantiate(Bullet_SP3, new Vector3(this.transform.position.x+5.5f,this.transform.position.y + 1.5f ,this.transform.position.z), Quaternion.identity);
+          Instantiate(Bullet_SP3, new Vector3(this.transform.position.x+6f,this.transform.position.y - 1.5f ,this.transform.position.z), Quaternion.identity);
+          Instantiate(Bullet_SP3, new Vector3(this.transform.position.x+7f,this.transform.position.y + 1.5f ,this.transform.position.z), Quaternion.identity);
           Instantiate(Bullet_SP4, new Vector3(this.transform.position.x+5.5f,this.transform.position.y ,this.transform.position.z), Quaternion.identity);
-          Instantiate(Bullet_SP3, new Vector3(this.transform.position.x+5.5f,this.transform.position.y - 1.5f ,this.transform.position.z), Quaternion.identity);
-          Instantiate(Bullet_SP3, new Vector3(this.transform.position.x+3.5f,this.transform.position.y + 3f ,this.transform.position.z), Quaternion.identity);
-          Instantiate(Bullet_SP4, new Vector3(this.transform.position.x+3.5f,this.transform.position.y + 4.5f,this.transform.position.z), Quaternion.identity);
-          Instantiate(Bullet_SP3, new Vector3(this.transform.position.x+3.5f,this.transform.position.y - 3f ,this.transform.position.z), Quaternion.identity);
-          Instantiate(Bullet_SP4, new Vector3(this.transform.position.x+3.5f,this.transform.position.y - 4.5f,this.transform.position.z), Quaternion.identity);
-          Instantiate(Bullet_SP3, new Vector3(this.transform.position.x+4.5f,this.transform.position.y + 3f ,this.transform.position.z), Quaternion.identity);
-          Instantiate(Bullet_SP4, new Vector3(this.transform.position.x+4.5f,this.transform.position.y +4.5f,this.transform.position.z), Quaternion.identity);
-          Instantiate(Bullet_SP3, new Vector3(this.transform.position.x+4.5f,this.transform.position.y - 3f ,this.transform.position.z), Quaternion.identity);
-          Instantiate(Bullet_SP4, new Vector3(this.transform.position.x+4.5f,this.transform.position.y -4.5f,this.transform.position.z), Quaternion.identity);
-          Instantiate(Bullet_SP3, new Vector3(this.transform.position.x+5.5f,this.transform.position.y + 3f ,this.transform.position.z), Quaternion.identity);
-          Instantiate(Bullet_SP4, new Vector3(this.transform.position.x+5.5f,this.transform.position.y + 4.5f,this.transform.position.z), Quaternion.identity);
-          Instantiate(Bullet_SP3, new Vector3(this.transform.position.x+5.5f,this.transform.position.y - 3f ,this.transform.position.z), Quaternion.identity);
-          Instantiate(Bullet_SP4, new Vector3(this.transform.position.x+5.5f,this.transform.position.y - 4.5f,this.transform.position.z), Quaternion.identity);
+          Instantiate(Bullet_SP3, new Vector3(this.transform.position.x+7f,this.transform.position.y - 1.5f ,this.transform.position.z), Quaternion.identity);
 
+          Instantiate(Bullet_SP3, new Vector3(this.transform.position.x+6f,this.transform.position.y + 3f ,this.transform.position.z), Quaternion.identity);
+          Instantiate(Bullet_SP4, new Vector3(this.transform.position.x+7f,this.transform.position.y + 4.5f,this.transform.position.z), Quaternion.identity);
+          Instantiate(Bullet_SP3, new Vector3(this.transform.position.x+6f,this.transform.position.y - 3f ,this.transform.position.z), Quaternion.identity);
+          Instantiate(Bullet_SP4, new Vector3(this.transform.position.x+7f,this.transform.position.y - 4.5f,this.transform.position.z), Quaternion.identity);
+          Instantiate(Bullet_SP3, new Vector3(this.transform.position.x+7f,this.transform.position.y + 3f ,this.transform.position.z), Quaternion.identity);
+          Instantiate(Bullet_SP4, new Vector3(this.transform.position.x+8f,this.transform.position.y +4.5f,this.transform.position.z), Quaternion.identity);
+          Instantiate(Bullet_SP3, new Vector3(this.transform.position.x+7f,this.transform.position.y - 3f ,this.transform.position.z), Quaternion.identity);
+          Instantiate(Bullet_SP4, new Vector3(this.transform.position.x+8f,this.transform.position.y -4.5f,this.transform.position.z), Quaternion.identity);
+          Instantiate(Bullet_SP3, new Vector3(this.transform.position.x+8f,this.transform.position.y + 3f ,this.transform.position.z), Quaternion.identity);
+          Instantiate(Bullet_SP4, new Vector3(this.transform.position.x+9f,this.transform.position.y + 4.5f,this.transform.position.z), Quaternion.identity);
+          Instantiate(Bullet_SP3, new Vector3(this.transform.position.x+8f,this.transform.position.y - 3f ,this.transform.position.z), Quaternion.identity);
+          Instantiate(Bullet_SP4, new Vector3(this.transform.position.x+9f,this.transform.position.y - 4.5f,this.transform.position.z), Quaternion.identity);
+
+        }else{
+
+
+          Shot_Se.active = false;
+          Laser_Se.active = false;
+
+          weapon_Anim.SetBool("Use_Normal_Z",false);
+          weapon_Anim.SetBool("Use_Normal_X",false);
+          weapon_Anim.SetBool("Awaking_Use_Z",false);
+          weapon_Anim.SetBool("Awaking_Use_X",false);
+          weapon_Anim.SetBool("Use_Sp_Z",false);
+          weapon_Anim.SetBool("Use_Sp_X",false);
+          Camera.SetBool("Reiwa_Canon",false);
+          Camera.SetBool("Sp_Use",false);
+          Sp_Use= false;
         }
 
 
 
 
+      }else{
+        weapon_Anim.SetBool("Use_Normal_Z",false);
+        weapon_Anim.SetBool("Use_Normal_X",false);
+        weapon_Anim.SetBool("Awaking_Use_Z",false);
+        weapon_Anim.SetBool("Awaking_Use_X",false);
+        weapon_Anim.SetBool("Use_Sp_Z",false);
+        weapon_Anim.SetBool("Use_Sp_X",false);
+        Camera.SetBool("Reiwa_Canon",false);
+        Camera.SetBool("Sp_Use",false);
       }
 
 

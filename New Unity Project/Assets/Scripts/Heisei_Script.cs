@@ -98,10 +98,7 @@ public class Heisei_Script : MonoBehaviour {
 		if(other.CompareTag("Player")){
 
 		}
-		if(other.CompareTag("Deth")){
-			Destroy(this.gameObject);
-			Debug.Log("的破壊");
-		}
+
 		}
 
 }

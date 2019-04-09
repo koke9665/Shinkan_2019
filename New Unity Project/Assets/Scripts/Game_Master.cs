@@ -217,9 +217,8 @@ if(PlayerLife_Gage2>PlayerLife_Gage && reikyaku_Mode == false){
 			 Awakening_Event.active = true;
 			 Instantiate(Awakening_Text, this.transform.position, Quaternion.identity);
 			 Player_Move.Player_Move_On = false;
-			 Awakening_Flag = true;
 			 Awakening_Gage2 = 0;
-			 Invoke("Delay_Player_Move",3.7f);
+			 Invoke("Delay_Player_Move",3.5f);
 		 }
 
 			float hoge = PlayerLife_Gage2/10;
@@ -249,6 +248,7 @@ if(PlayerLife_Gage2>PlayerLife_Gage && reikyaku_Mode == false){
 	}
 
 	void Delay_Player_Move(){
+		Awakening_Flag = true;
 		Awakening_Event.active = false;
 		Player_Move.Player_Move_On = true;
 	}
